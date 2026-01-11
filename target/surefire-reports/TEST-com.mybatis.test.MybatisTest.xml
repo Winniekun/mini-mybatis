@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="6" failures="0" name="com.mybatis.test.MybatisTest" time="0.858" errors="5" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_321.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.321-b07"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/weikunkun/IdeaProjects/cursor-learn/mybatis"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/weikunkun/IdeaProjects/cursor-learn/mybatis"/>
+    <property name="java.runtime.version" value="1.8.0_321-b07"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_321.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/60/hcz4q2yx0ps8c5x0ygtpkn500000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="socksProxyPort" value="7897"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="https.proxyHost" value="127.0.0.1"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/opt/apache-maven-3.6.3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/weikunkun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="http.proxyPort" value="7897"/>
+    <property name="maven.conf" value="/opt/apache-maven-3.6.3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="26.2"/>
+    <property name="http.nonProxyHosts" value="127.0.0.1|192.168.0.0/16|*.192.168.0.0/16|10.0.0.0/8|*.10.0.0.0/8|172.16.0.0/12|*.172.16.0.0/12|172.29.0.0/16|*.172.29.0.0/16|localhost|*.localhost|local|*.local|crashlytics.com|*.crashlytics.com|&lt;local&gt;|*.&lt;local&gt;"/>
+    <property name="library.jansi.path" value="/opt/apache-maven-3.6.3/lib/jansi-native"/>
+    <property name="user.home" value="/Users/weikunkun"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="weikunkun"/>
+    <property name="java.class.path" value="/opt/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="socksProxyHost" value="127.0.0.1"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_321.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_321"/>
+    <property name="java.ext.dirs" value="/Users/weikunkun/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_321.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="http.proxyHost" value="127.0.0.1"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_321.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_321.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_321.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_321.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_321.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_321.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_321.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_321.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/opt/apache-maven-3.6.3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="https.proxyPort" value="7897"/>
+    <property name="socksNonProxyHosts" value="127.0.0.1|192.168.0.0/16|*.192.168.0.0/16|10.0.0.0/8|*.10.0.0.0/8|172.16.0.0/12|*.172.16.0.0/12|172.29.0.0/16|*.172.29.0.0/16|localhost|*.localhost|local|*.local|crashlytics.com|*.crashlytics.com|&lt;local&gt;|*.&lt;local&gt;"/>
+    <property name="ftp.nonProxyHosts" value="127.0.0.1|192.168.0.0/16|*.192.168.0.0/16|10.0.0.0/8|*.10.0.0.0/8|172.16.0.0/12|*.172.16.0.0/12|172.29.0.0/16|*.172.29.0.0/16|localhost|*.localhost|local|*.local|crashlytics.com|*.crashlytics.com|&lt;local&gt;|*.&lt;local&gt;"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.mybatis.test.MybatisTest" name="testSqlSession" time="0.764">
+    <error message="Can not set java.util.Date field com.mybatis.test.entity.User.createTime to null value" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set java.util.Date field com.mybatis.test.entity.User.createTime to null value
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.lang.reflect.Field.set(Field.java:764)
+	at com.mybatis.executor.resultset.ResultSetHandler.handleBeanType(ResultSetHandler.java:164)
+	at com.mybatis.executor.resultset.ResultSetHandler.createResultObject(ResultSetHandler.java:102)
+	at com.mybatis.executor.resultset.ResultSetHandler.handleResultSet(ResultSetHandler.java:68)
+	at com.mybatis.executor.statement.StatementHandler.query(StatementHandler.java:128)
+	at com.mybatis.executor.SimpleExecutor.query(SimpleExecutor.java:79)
+	at com.mybatis.session.DefaultSqlSession.selectList(DefaultSqlSession.java:132)
+	at com.mybatis.session.DefaultSqlSession.selectOne(DefaultSqlSession.java:112)
+	at com.mybatis.test.MybatisTest.testSqlSession(MybatisTest.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>2026-01-10 22:44:02.209 [main] INFO  c.m.builder.xml.XMLConfigBuilder - 开始解析MyBatis配置文件...
+2026-01-10 22:44:02.216 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 默认环境: development
+2026-01-10 22:44:02.220 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库驱动: com.mysql.cj.jdbc.Driver
+2026-01-10 22:44:02.220 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库URL: jdbc:mysql://localhost:3306/mybatis_learn?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=Asia/Shanghai
+2026-01-10 22:44:02.220 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库用户名: root
+2026-01-10 22:44:02.221 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库密码: ******
+2026-01-10 22:44:02.221 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 解析Mapper文件: mapper/UserMapper.xml
+2026-01-10 22:44:02.226 [main] INFO  c.m.builder.xml.XMLMapperBuilder - 解析Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.227 [main] INFO  com.mybatis.binding.MapperRegistry - 注册Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.228 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectById [SELECT]
+2026-01-10 22:44:02.228 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 22:44:02.229 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectAll [SELECT]
+2026-01-10 22:44:02.229 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user ORDER BY id
+2026-01-10 22:44:02.230 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.insert [INSERT]
+2026-01-10 22:44:02.230 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: INSERT INTO user (username, password, email, create_time) VALUES (#{username}, #{password}, #{email}, #{createTime})
+2026-01-10 22:44:02.230 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.update [UPDATE]
+2026-01-10 22:44:02.230 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: UPDATE user SET username = #{username}, password = #{password}, email = #{email} WHERE id = #{id}
+2026-01-10 22:44:02.230 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.deleteById [DELETE]
+2026-01-10 22:44:02.230 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: DELETE FROM user WHERE id = #{id}
+2026-01-10 22:44:02.231 [main] INFO  c.m.builder.xml.XMLMapperBuilder - Mapper解析完成: com.mybatis.test.mapper.UserMapper (共5条SQL语句)
+2026-01-10 22:44:02.231 [main] INFO  c.m.builder.xml.XMLConfigBuilder - MyBatis配置文件解析完成！
+2026-01-10 22:44:02.232 [main] INFO  c.m.session.DefaultSqlSessionFactory - SqlSessionFactory创建成功
+========================================
+SqlSessionFactory初始化完成！
+========================================
+
+
+========== 测试：SqlSession直接执行SQL ==========
+2026-01-10 22:44:02.233 [main] DEBUG c.m.session.DefaultSqlSessionFactory - 打开SqlSession [autoCommit=false]
+2026-01-10 22:44:02.667 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接建立成功
+2026-01-10 22:44:02.668 [main] DEBUG c.mybatis.session.DefaultSqlSession - SqlSession创建成功 [autoCommit=false]
+2026-01-10 22:44:02.669 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectOne: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.669 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectList: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.669 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor执行查询: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.672 [main] DEBUG c.m.e.statement.StatementHandler - 原始SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 22:44:02.672 [main] DEBUG c.m.e.statement.StatementHandler - 预编译SQL: SELECT id, username, password, email, create_time FROM user WHERE id = ?
+2026-01-10 22:44:02.693 [main] DEBUG c.m.e.statement.StatementHandler - 设置参数: [1] = 1
+2026-01-10 22:44:02.705 [main] DEBUG c.m.e.statement.StatementHandler - SQL执行成功，开始处理结果集
+2026-01-10 22:44:02.706 [main] DEBUG c.m.e.resultset.ResultSetHandler - 开始处理结果集，目标类型: com.mybatis.test.entity.User
+2026-01-10 22:44:02.707 [main] DEBUG c.m.e.resultset.ResultSetHandler - 结果集包含5列
+2026-01-10 22:44:02.709 [main] WARN  c.m.e.resultset.ResultSetHandler - 不支持的类型转换: class java.time.LocalDateTime → class java.util.Date
+2026-01-10 22:44:02.709 [main] DEBUG c.mybatis.session.DefaultSqlSession - 关闭SqlSession
+2026-01-10 22:44:02.709 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor已关闭
+2026-01-10 22:44:02.721 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接已关闭
+</system-out>
+  </testcase>
+  <testcase classname="com.mybatis.test.MybatisTest" name="testMapperProxy" time="0.019">
+    <error message="Can not set java.util.Date field com.mybatis.test.entity.User.createTime to null value" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set java.util.Date field com.mybatis.test.entity.User.createTime to null value
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.lang.reflect.Field.set(Field.java:764)
+	at com.mybatis.executor.resultset.ResultSetHandler.handleBeanType(ResultSetHandler.java:164)
+	at com.mybatis.executor.resultset.ResultSetHandler.createResultObject(ResultSetHandler.java:102)
+	at com.mybatis.executor.resultset.ResultSetHandler.handleResultSet(ResultSetHandler.java:68)
+	at com.mybatis.executor.statement.StatementHandler.query(StatementHandler.java:128)
+	at com.mybatis.executor.SimpleExecutor.query(SimpleExecutor.java:79)
+	at com.mybatis.session.DefaultSqlSession.selectList(DefaultSqlSession.java:132)
+	at com.mybatis.session.DefaultSqlSession.selectOne(DefaultSqlSession.java:112)
+	at com.mybatis.binding.MapperProxy.executeMethod(MapperProxy.java:128)
+	at com.mybatis.binding.MapperProxy.invoke(MapperProxy.java:98)
+	at com.sun.proxy.$Proxy6.selectById(Unknown Source)
+	at com.mybatis.test.MybatisTest.testMapperProxy(MybatisTest.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>2026-01-10 22:44:02.730 [main] INFO  c.m.builder.xml.XMLConfigBuilder - 开始解析MyBatis配置文件...
+2026-01-10 22:44:02.731 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 默认环境: development
+2026-01-10 22:44:02.731 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库驱动: com.mysql.cj.jdbc.Driver
+2026-01-10 22:44:02.731 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库URL: jdbc:mysql://localhost:3306/mybatis_learn?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=Asia/Shanghai
+2026-01-10 22:44:02.731 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库用户名: root
+2026-01-10 22:44:02.731 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库密码: ******
+2026-01-10 22:44:02.731 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 解析Mapper文件: mapper/UserMapper.xml
+2026-01-10 22:44:02.734 [main] INFO  c.m.builder.xml.XMLMapperBuilder - 解析Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.734 [main] INFO  com.mybatis.binding.MapperRegistry - 注册Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.734 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectById [SELECT]
+2026-01-10 22:44:02.734 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 22:44:02.734 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectAll [SELECT]
+2026-01-10 22:44:02.735 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user ORDER BY id
+2026-01-10 22:44:02.735 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.insert [INSERT]
+2026-01-10 22:44:02.735 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: INSERT INTO user (username, password, email, create_time) VALUES (#{username}, #{password}, #{email}, #{createTime})
+2026-01-10 22:44:02.735 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.update [UPDATE]
+2026-01-10 22:44:02.735 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: UPDATE user SET username = #{username}, password = #{password}, email = #{email} WHERE id = #{id}
+2026-01-10 22:44:02.735 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.deleteById [DELETE]
+2026-01-10 22:44:02.736 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: DELETE FROM user WHERE id = #{id}
+2026-01-10 22:44:02.736 [main] INFO  c.m.builder.xml.XMLMapperBuilder - Mapper解析完成: com.mybatis.test.mapper.UserMapper (共5条SQL语句)
+2026-01-10 22:44:02.736 [main] INFO  c.m.builder.xml.XMLConfigBuilder - MyBatis配置文件解析完成！
+2026-01-10 22:44:02.736 [main] INFO  c.m.session.DefaultSqlSessionFactory - SqlSessionFactory创建成功
+========================================
+SqlSessionFactory初始化完成！
+========================================
+
+
+========== 测试：Mapper接口代理 ==========
+2026-01-10 22:44:02.737 [main] DEBUG c.m.session.DefaultSqlSessionFactory - 打开SqlSession [autoCommit=false]
+2026-01-10 22:44:02.741 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接建立成功
+2026-01-10 22:44:02.742 [main] DEBUG c.mybatis.session.DefaultSqlSession - SqlSession创建成功 [autoCommit=false]
+2026-01-10 22:44:02.742 [main] DEBUG c.mybatis.binding.MapperProxyFactory - 创建Mapper代理对象: com.mybatis.test.mapper.UserMapper
+Mapper代理对象: com.sun.proxy.$Proxy6
+2026-01-10 22:44:02.744 [main] DEBUG com.mybatis.binding.MapperProxy - Mapper方法调用: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.744 [main] DEBUG com.mybatis.binding.MapperProxy - 执行selectOne
+2026-01-10 22:44:02.745 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectOne: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.745 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectList: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.745 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor执行查询: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.745 [main] DEBUG c.m.e.statement.StatementHandler - 原始SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 22:44:02.745 [main] DEBUG c.m.e.statement.StatementHandler - 预编译SQL: SELECT id, username, password, email, create_time FROM user WHERE id = ?
+2026-01-10 22:44:02.745 [main] DEBUG c.m.e.statement.StatementHandler - 设置参数: [1] = 1
+2026-01-10 22:44:02.746 [main] DEBUG c.m.e.statement.StatementHandler - SQL执行成功，开始处理结果集
+2026-01-10 22:44:02.747 [main] DEBUG c.m.e.resultset.ResultSetHandler - 开始处理结果集，目标类型: com.mybatis.test.entity.User
+2026-01-10 22:44:02.747 [main] DEBUG c.m.e.resultset.ResultSetHandler - 结果集包含5列
+2026-01-10 22:44:02.747 [main] WARN  c.m.e.resultset.ResultSetHandler - 不支持的类型转换: class java.time.LocalDateTime → class java.util.Date
+2026-01-10 22:44:02.747 [main] DEBUG c.mybatis.session.DefaultSqlSession - 关闭SqlSession
+2026-01-10 22:44:02.748 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor已关闭
+2026-01-10 22:44:02.748 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接已关闭
+</system-out>
+  </testcase>
+  <testcase classname="com.mybatis.test.MybatisTest" name="testDelete" time="0.017"/>
+  <testcase classname="com.mybatis.test.MybatisTest" name="testInsert" time="0.023">
+    <error message="更新失败: com.mybatis.test.mapper.UserMapper.insert" type="com.mybatis.exceptions.MyBatisException">com.mybatis.exceptions.MyBatisException: 更新失败: com.mybatis.test.mapper.UserMapper.insert
+	at com.mybatis.session.DefaultSqlSession.update(DefaultSqlSession.java:160)
+	at com.mybatis.binding.MapperProxy.executeMethod(MapperProxy.java:123)
+	at com.mybatis.binding.MapperProxy.invoke(MapperProxy.java:98)
+	at com.sun.proxy.$Proxy6.insert(Unknown Source)
+	at com.mybatis.test.MybatisTest.testInsert(MybatisTest.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.sql.SQLException: No value specified for parameter 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1121)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1046)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1371)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1031)
+	at com.mybatis.executor.statement.StatementHandler.update(StatementHandler.java:144)
+	at com.mybatis.executor.SimpleExecutor.update(SimpleExecutor.java:111)
+	at com.mybatis.session.DefaultSqlSession.update(DefaultSqlSession.java:158)
+	... 37 more
+</error>
+    <system-out>2026-01-10 22:44:02.770 [main] INFO  c.m.builder.xml.XMLConfigBuilder - 开始解析MyBatis配置文件...
+2026-01-10 22:44:02.771 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 默认环境: development
+2026-01-10 22:44:02.771 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库驱动: com.mysql.cj.jdbc.Driver
+2026-01-10 22:44:02.771 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库URL: jdbc:mysql://localhost:3306/mybatis_learn?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=Asia/Shanghai
+2026-01-10 22:44:02.771 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库用户名: root
+2026-01-10 22:44:02.771 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库密码: ******
+2026-01-10 22:44:02.771 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 解析Mapper文件: mapper/UserMapper.xml
+2026-01-10 22:44:02.774 [main] INFO  c.m.builder.xml.XMLMapperBuilder - 解析Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.775 [main] INFO  com.mybatis.binding.MapperRegistry - 注册Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.775 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectById [SELECT]
+2026-01-10 22:44:02.775 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 22:44:02.775 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectAll [SELECT]
+2026-01-10 22:44:02.776 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user ORDER BY id
+2026-01-10 22:44:02.776 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.insert [INSERT]
+2026-01-10 22:44:02.776 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: INSERT INTO user (username, password, email, create_time) VALUES (#{username}, #{password}, #{email}, #{createTime})
+2026-01-10 22:44:02.776 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.update [UPDATE]
+2026-01-10 22:44:02.776 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: UPDATE user SET username = #{username}, password = #{password}, email = #{email} WHERE id = #{id}
+2026-01-10 22:44:02.777 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.deleteById [DELETE]
+2026-01-10 22:44:02.777 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: DELETE FROM user WHERE id = #{id}
+2026-01-10 22:44:02.777 [main] INFO  c.m.builder.xml.XMLMapperBuilder - Mapper解析完成: com.mybatis.test.mapper.UserMapper (共5条SQL语句)
+2026-01-10 22:44:02.777 [main] INFO  c.m.builder.xml.XMLConfigBuilder - MyBatis配置文件解析完成！
+2026-01-10 22:44:02.777 [main] INFO  c.m.session.DefaultSqlSessionFactory - SqlSessionFactory创建成功
+========================================
+SqlSessionFactory初始化完成！
+========================================
+
+
+========== 测试：插入数据 ==========
+2026-01-10 22:44:02.777 [main] DEBUG c.m.session.DefaultSqlSessionFactory - 打开SqlSession [autoCommit=false]
+2026-01-10 22:44:02.781 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接建立成功
+2026-01-10 22:44:02.782 [main] DEBUG c.mybatis.session.DefaultSqlSession - SqlSession创建成功 [autoCommit=false]
+2026-01-10 22:44:02.782 [main] DEBUG c.mybatis.binding.MapperProxyFactory - 创建Mapper代理对象: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.782 [main] DEBUG com.mybatis.binding.MapperProxy - Mapper方法调用: com.mybatis.test.mapper.UserMapper.insert
+2026-01-10 22:44:02.782 [main] DEBUG com.mybatis.binding.MapperProxy - 执行update
+2026-01-10 22:44:02.782 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行update: com.mybatis.test.mapper.UserMapper.insert
+2026-01-10 22:44:02.782 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor执行更新: com.mybatis.test.mapper.UserMapper.insert
+2026-01-10 22:44:02.782 [main] DEBUG c.m.e.statement.StatementHandler - 原始SQL: INSERT INTO user (username, password, email, create_time) VALUES (#{username}, #{password}, #{email}, #{createTime})
+2026-01-10 22:44:02.782 [main] DEBUG c.m.e.statement.StatementHandler - 预编译SQL: INSERT INTO user (username, password, email, create_time) VALUES (?, ?, ?, ?)
+2026-01-10 22:44:02.783 [main] WARN  c.m.e.statement.StatementHandler - 暂不支持复杂类型参数: class com.mybatis.test.entity.User
+2026-01-10 22:44:02.788 [main] DEBUG c.mybatis.session.DefaultSqlSession - 关闭SqlSession
+2026-01-10 22:44:02.788 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor已关闭
+2026-01-10 22:44:02.789 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接已关闭
+</system-out>
+  </testcase>
+  <testcase classname="com.mybatis.test.MybatisTest" name="testUpdate" time="0.016">
+    <error message="Can not set java.util.Date field com.mybatis.test.entity.User.createTime to null value" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set java.util.Date field com.mybatis.test.entity.User.createTime to null value
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.lang.reflect.Field.set(Field.java:764)
+	at com.mybatis.executor.resultset.ResultSetHandler.handleBeanType(ResultSetHandler.java:164)
+	at com.mybatis.executor.resultset.ResultSetHandler.createResultObject(ResultSetHandler.java:102)
+	at com.mybatis.executor.resultset.ResultSetHandler.handleResultSet(ResultSetHandler.java:68)
+	at com.mybatis.executor.statement.StatementHandler.query(StatementHandler.java:128)
+	at com.mybatis.executor.SimpleExecutor.query(SimpleExecutor.java:79)
+	at com.mybatis.session.DefaultSqlSession.selectList(DefaultSqlSession.java:132)
+	at com.mybatis.session.DefaultSqlSession.selectOne(DefaultSqlSession.java:112)
+	at com.mybatis.binding.MapperProxy.executeMethod(MapperProxy.java:128)
+	at com.mybatis.binding.MapperProxy.invoke(MapperProxy.java:98)
+	at com.sun.proxy.$Proxy6.selectById(Unknown Source)
+	at com.mybatis.test.MybatisTest.testUpdate(MybatisTest.java:171)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>2026-01-10 22:44:02.792 [main] INFO  c.m.builder.xml.XMLConfigBuilder - 开始解析MyBatis配置文件...
+2026-01-10 22:44:02.792 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 默认环境: development
+2026-01-10 22:44:02.792 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库驱动: com.mysql.cj.jdbc.Driver
+2026-01-10 22:44:02.792 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库URL: jdbc:mysql://localhost:3306/mybatis_learn?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=Asia/Shanghai
+2026-01-10 22:44:02.793 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库用户名: root
+2026-01-10 22:44:02.793 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库密码: ******
+2026-01-10 22:44:02.793 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 解析Mapper文件: mapper/UserMapper.xml
+2026-01-10 22:44:02.795 [main] INFO  c.m.builder.xml.XMLMapperBuilder - 解析Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.795 [main] INFO  com.mybatis.binding.MapperRegistry - 注册Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.795 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectById [SELECT]
+2026-01-10 22:44:02.796 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 22:44:02.796 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectAll [SELECT]
+2026-01-10 22:44:02.796 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user ORDER BY id
+2026-01-10 22:44:02.796 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.insert [INSERT]
+2026-01-10 22:44:02.796 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: INSERT INTO user (username, password, email, create_time) VALUES (#{username}, #{password}, #{email}, #{createTime})
+2026-01-10 22:44:02.796 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.update [UPDATE]
+2026-01-10 22:44:02.796 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: UPDATE user SET username = #{username}, password = #{password}, email = #{email} WHERE id = #{id}
+2026-01-10 22:44:02.797 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.deleteById [DELETE]
+2026-01-10 22:44:02.797 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: DELETE FROM user WHERE id = #{id}
+2026-01-10 22:44:02.797 [main] INFO  c.m.builder.xml.XMLMapperBuilder - Mapper解析完成: com.mybatis.test.mapper.UserMapper (共5条SQL语句)
+2026-01-10 22:44:02.797 [main] INFO  c.m.builder.xml.XMLConfigBuilder - MyBatis配置文件解析完成！
+2026-01-10 22:44:02.797 [main] INFO  c.m.session.DefaultSqlSessionFactory - SqlSessionFactory创建成功
+========================================
+SqlSessionFactory初始化完成！
+========================================
+
+
+========== 测试：更新数据 ==========
+2026-01-10 22:44:02.797 [main] DEBUG c.m.session.DefaultSqlSessionFactory - 打开SqlSession [autoCommit=false]
+2026-01-10 22:44:02.801 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接建立成功
+2026-01-10 22:44:02.801 [main] DEBUG c.mybatis.session.DefaultSqlSession - SqlSession创建成功 [autoCommit=false]
+2026-01-10 22:44:02.802 [main] DEBUG c.mybatis.binding.MapperProxyFactory - 创建Mapper代理对象: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.802 [main] DEBUG com.mybatis.binding.MapperProxy - Mapper方法调用: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.802 [main] DEBUG com.mybatis.binding.MapperProxy - 执行selectOne
+2026-01-10 22:44:02.802 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectOne: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.802 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectList: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.802 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor执行查询: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.802 [main] DEBUG c.m.e.statement.StatementHandler - 原始SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 22:44:02.802 [main] DEBUG c.m.e.statement.StatementHandler - 预编译SQL: SELECT id, username, password, email, create_time FROM user WHERE id = ?
+2026-01-10 22:44:02.803 [main] DEBUG c.m.e.statement.StatementHandler - 设置参数: [1] = 1
+2026-01-10 22:44:02.803 [main] DEBUG c.m.e.statement.StatementHandler - SQL执行成功，开始处理结果集
+2026-01-10 22:44:02.804 [main] DEBUG c.m.e.resultset.ResultSetHandler - 开始处理结果集，目标类型: com.mybatis.test.entity.User
+2026-01-10 22:44:02.804 [main] DEBUG c.m.e.resultset.ResultSetHandler - 结果集包含5列
+2026-01-10 22:44:02.804 [main] WARN  c.m.e.resultset.ResultSetHandler - 不支持的类型转换: class java.time.LocalDateTime → class java.util.Date
+2026-01-10 22:44:02.804 [main] DEBUG c.mybatis.session.DefaultSqlSession - 关闭SqlSession
+2026-01-10 22:44:02.804 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor已关闭
+2026-01-10 22:44:02.805 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接已关闭
+</system-out>
+  </testcase>
+  <testcase classname="com.mybatis.test.MybatisTest" name="testSelectList" time="0.019">
+    <error message="Can not set java.util.Date field com.mybatis.test.entity.User.createTime to null value" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set java.util.Date field com.mybatis.test.entity.User.createTime to null value
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.lang.reflect.Field.set(Field.java:764)
+	at com.mybatis.executor.resultset.ResultSetHandler.handleBeanType(ResultSetHandler.java:164)
+	at com.mybatis.executor.resultset.ResultSetHandler.createResultObject(ResultSetHandler.java:102)
+	at com.mybatis.executor.resultset.ResultSetHandler.handleResultSet(ResultSetHandler.java:68)
+	at com.mybatis.executor.statement.StatementHandler.query(StatementHandler.java:128)
+	at com.mybatis.executor.SimpleExecutor.query(SimpleExecutor.java:79)
+	at com.mybatis.session.DefaultSqlSession.selectList(DefaultSqlSession.java:132)
+	at com.mybatis.binding.MapperProxy.executeMethod(MapperProxy.java:118)
+	at com.mybatis.binding.MapperProxy.invoke(MapperProxy.java:98)
+	at com.sun.proxy.$Proxy6.selectAll(Unknown Source)
+	at com.mybatis.test.MybatisTest.testSelectList(MybatisTest.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>2026-01-10 22:44:02.808 [main] INFO  c.m.builder.xml.XMLConfigBuilder - 开始解析MyBatis配置文件...
+2026-01-10 22:44:02.808 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 默认环境: development
+2026-01-10 22:44:02.809 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库驱动: com.mysql.cj.jdbc.Driver
+2026-01-10 22:44:02.809 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库URL: jdbc:mysql://localhost:3306/mybatis_learn?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=Asia/Shanghai
+2026-01-10 22:44:02.809 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库用户名: root
+2026-01-10 22:44:02.809 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库密码: ******
+2026-01-10 22:44:02.809 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 解析Mapper文件: mapper/UserMapper.xml
+2026-01-10 22:44:02.812 [main] INFO  c.m.builder.xml.XMLMapperBuilder - 解析Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.812 [main] INFO  com.mybatis.binding.MapperRegistry - 注册Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.812 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectById [SELECT]
+2026-01-10 22:44:02.812 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 22:44:02.812 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectAll [SELECT]
+2026-01-10 22:44:02.812 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user ORDER BY id
+2026-01-10 22:44:02.812 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.insert [INSERT]
+2026-01-10 22:44:02.812 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: INSERT INTO user (username, password, email, create_time) VALUES (#{username}, #{password}, #{email}, #{createTime})
+2026-01-10 22:44:02.813 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.update [UPDATE]
+2026-01-10 22:44:02.813 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: UPDATE user SET username = #{username}, password = #{password}, email = #{email} WHERE id = #{id}
+2026-01-10 22:44:02.813 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.deleteById [DELETE]
+2026-01-10 22:44:02.813 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: DELETE FROM user WHERE id = #{id}
+2026-01-10 22:44:02.813 [main] INFO  c.m.builder.xml.XMLMapperBuilder - Mapper解析完成: com.mybatis.test.mapper.UserMapper (共5条SQL语句)
+2026-01-10 22:44:02.813 [main] INFO  c.m.builder.xml.XMLConfigBuilder - MyBatis配置文件解析完成！
+2026-01-10 22:44:02.813 [main] INFO  c.m.session.DefaultSqlSessionFactory - SqlSessionFactory创建成功
+========================================
+SqlSessionFactory初始化完成！
+========================================
+
+
+========== 测试：查询列表 ==========
+2026-01-10 22:44:02.813 [main] DEBUG c.m.session.DefaultSqlSessionFactory - 打开SqlSession [autoCommit=false]
+2026-01-10 22:44:02.818 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接建立成功
+2026-01-10 22:44:02.818 [main] DEBUG c.mybatis.session.DefaultSqlSession - SqlSession创建成功 [autoCommit=false]
+2026-01-10 22:44:02.819 [main] DEBUG c.mybatis.binding.MapperProxyFactory - 创建Mapper代理对象: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.819 [main] DEBUG com.mybatis.binding.MapperProxy - Mapper方法调用: com.mybatis.test.mapper.UserMapper.selectAll
+2026-01-10 22:44:02.819 [main] DEBUG com.mybatis.binding.MapperProxy - 执行selectList
+2026-01-10 22:44:02.819 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectList: com.mybatis.test.mapper.UserMapper.selectAll
+2026-01-10 22:44:02.819 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor执行查询: com.mybatis.test.mapper.UserMapper.selectAll
+2026-01-10 22:44:02.819 [main] DEBUG c.m.e.statement.StatementHandler - 原始SQL: SELECT id, username, password, email, create_time FROM user ORDER BY id
+2026-01-10 22:44:02.820 [main] DEBUG c.m.e.statement.StatementHandler - 预编译SQL: SELECT id, username, password, email, create_time FROM user ORDER BY id
+2026-01-10 22:44:02.822 [main] DEBUG c.m.e.statement.StatementHandler - SQL执行成功，开始处理结果集
+2026-01-10 22:44:02.822 [main] DEBUG c.m.e.resultset.ResultSetHandler - 开始处理结果集，目标类型: com.mybatis.test.entity.User
+2026-01-10 22:44:02.822 [main] DEBUG c.m.e.resultset.ResultSetHandler - 结果集包含5列
+2026-01-10 22:44:02.823 [main] WARN  c.m.e.resultset.ResultSetHandler - 不支持的类型转换: class java.time.LocalDateTime → class java.util.Date
+2026-01-10 22:44:02.823 [main] DEBUG c.mybatis.session.DefaultSqlSession - 关闭SqlSession
+2026-01-10 22:44:02.823 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor已关闭
+2026-01-10 22:44:02.824 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接已关闭
+</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,359 @@
+2026-01-10 22:44:02.209 [main] INFO  c.m.builder.xml.XMLConfigBuilder - 开始解析MyBatis配置文件...
+2026-01-10 22:44:02.216 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 默认环境: development
+2026-01-10 22:44:02.220 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库驱动: com.mysql.cj.jdbc.Driver
+2026-01-10 22:44:02.220 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库URL: jdbc:mysql://localhost:3306/mybatis_learn?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+2026-01-10 22:44:02.220 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库用户名: root
+2026-01-10 22:44:02.221 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库密码: ******
+2026-01-10 22:44:02.221 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 解析Mapper文件: mapper/UserMapper.xml
+2026-01-10 22:44:02.226 [main] INFO  c.m.builder.xml.XMLMapperBuilder - 解析Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.227 [main] INFO  com.mybatis.binding.MapperRegistry - 注册Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.228 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectById [SELECT]
+2026-01-10 22:44:02.228 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 22:44:02.229 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectAll [SELECT]
+2026-01-10 22:44:02.229 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user ORDER BY id
+2026-01-10 22:44:02.230 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.insert [INSERT]
+2026-01-10 22:44:02.230 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: INSERT INTO user (username, password, email, create_time) VALUES (#{username}, #{password}, #{email}, #{createTime})
+2026-01-10 22:44:02.230 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.update [UPDATE]
+2026-01-10 22:44:02.230 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: UPDATE user SET username = #{username}, password = #{password}, email = #{email} WHERE id = #{id}
+2026-01-10 22:44:02.230 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.deleteById [DELETE]
+2026-01-10 22:44:02.230 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: DELETE FROM user WHERE id = #{id}
+2026-01-10 22:44:02.231 [main] INFO  c.m.builder.xml.XMLMapperBuilder - Mapper解析完成: com.mybatis.test.mapper.UserMapper (共5条SQL语句)
+2026-01-10 22:44:02.231 [main] INFO  c.m.builder.xml.XMLConfigBuilder - MyBatis配置文件解析完成！
+2026-01-10 22:44:02.232 [main] INFO  c.m.session.DefaultSqlSessionFactory - SqlSessionFactory创建成功
+2026-01-10 22:44:02.233 [main] DEBUG c.m.session.DefaultSqlSessionFactory - 打开SqlSession [autoCommit=false]
+2026-01-10 22:44:02.667 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接建立成功
+2026-01-10 22:44:02.668 [main] DEBUG c.mybatis.session.DefaultSqlSession - SqlSession创建成功 [autoCommit=false]
+2026-01-10 22:44:02.669 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectOne: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.669 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectList: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.669 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor执行查询: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.672 [main] DEBUG c.m.e.statement.StatementHandler - 原始SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 22:44:02.672 [main] DEBUG c.m.e.statement.StatementHandler - 预编译SQL: SELECT id, username, password, email, create_time FROM user WHERE id = ?
+2026-01-10 22:44:02.693 [main] DEBUG c.m.e.statement.StatementHandler - 设置参数: [1] = 1
+2026-01-10 22:44:02.705 [main] DEBUG c.m.e.statement.StatementHandler - SQL执行成功，开始处理结果集
+2026-01-10 22:44:02.706 [main] DEBUG c.m.e.resultset.ResultSetHandler - 开始处理结果集，目标类型: com.mybatis.test.entity.User
+2026-01-10 22:44:02.707 [main] DEBUG c.m.e.resultset.ResultSetHandler - 结果集包含5列
+2026-01-10 22:44:02.709 [main] WARN  c.m.e.resultset.ResultSetHandler - 不支持的类型转换: class java.time.LocalDateTime → class java.util.Date
+2026-01-10 22:44:02.709 [main] DEBUG c.mybatis.session.DefaultSqlSession - 关闭SqlSession
+2026-01-10 22:44:02.709 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor已关闭
+2026-01-10 22:44:02.721 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接已关闭
+2026-01-10 22:44:02.730 [main] INFO  c.m.builder.xml.XMLConfigBuilder - 开始解析MyBatis配置文件...
+2026-01-10 22:44:02.731 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 默认环境: development
+2026-01-10 22:44:02.731 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库驱动: com.mysql.cj.jdbc.Driver
+2026-01-10 22:44:02.731 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库URL: jdbc:mysql://localhost:3306/mybatis_learn?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+2026-01-10 22:44:02.731 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库用户名: root
+2026-01-10 22:44:02.731 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库密码: ******
+2026-01-10 22:44:02.731 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 解析Mapper文件: mapper/UserMapper.xml
+2026-01-10 22:44:02.734 [main] INFO  c.m.builder.xml.XMLMapperBuilder - 解析Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.734 [main] INFO  com.mybatis.binding.MapperRegistry - 注册Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.734 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectById [SELECT]
+2026-01-10 22:44:02.734 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 22:44:02.734 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectAll [SELECT]
+2026-01-10 22:44:02.735 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user ORDER BY id
+2026-01-10 22:44:02.735 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.insert [INSERT]
+2026-01-10 22:44:02.735 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: INSERT INTO user (username, password, email, create_time) VALUES (#{username}, #{password}, #{email}, #{createTime})
+2026-01-10 22:44:02.735 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.update [UPDATE]
+2026-01-10 22:44:02.735 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: UPDATE user SET username = #{username}, password = #{password}, email = #{email} WHERE id = #{id}
+2026-01-10 22:44:02.735 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.deleteById [DELETE]
+2026-01-10 22:44:02.736 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: DELETE FROM user WHERE id = #{id}
+2026-01-10 22:44:02.736 [main] INFO  c.m.builder.xml.XMLMapperBuilder - Mapper解析完成: com.mybatis.test.mapper.UserMapper (共5条SQL语句)
+2026-01-10 22:44:02.736 [main] INFO  c.m.builder.xml.XMLConfigBuilder - MyBatis配置文件解析完成！
+2026-01-10 22:44:02.736 [main] INFO  c.m.session.DefaultSqlSessionFactory - SqlSessionFactory创建成功
+2026-01-10 22:44:02.737 [main] DEBUG c.m.session.DefaultSqlSessionFactory - 打开SqlSession [autoCommit=false]
+2026-01-10 22:44:02.741 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接建立成功
+2026-01-10 22:44:02.742 [main] DEBUG c.mybatis.session.DefaultSqlSession - SqlSession创建成功 [autoCommit=false]
+2026-01-10 22:44:02.742 [main] DEBUG c.mybatis.binding.MapperProxyFactory - 创建Mapper代理对象: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.744 [main] DEBUG com.mybatis.binding.MapperProxy - Mapper方法调用: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.744 [main] DEBUG com.mybatis.binding.MapperProxy - 执行selectOne
+2026-01-10 22:44:02.745 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectOne: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.745 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectList: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.745 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor执行查询: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.745 [main] DEBUG c.m.e.statement.StatementHandler - 原始SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 22:44:02.745 [main] DEBUG c.m.e.statement.StatementHandler - 预编译SQL: SELECT id, username, password, email, create_time FROM user WHERE id = ?
+2026-01-10 22:44:02.745 [main] DEBUG c.m.e.statement.StatementHandler - 设置参数: [1] = 1
+2026-01-10 22:44:02.746 [main] DEBUG c.m.e.statement.StatementHandler - SQL执行成功，开始处理结果集
+2026-01-10 22:44:02.747 [main] DEBUG c.m.e.resultset.ResultSetHandler - 开始处理结果集，目标类型: com.mybatis.test.entity.User
+2026-01-10 22:44:02.747 [main] DEBUG c.m.e.resultset.ResultSetHandler - 结果集包含5列
+2026-01-10 22:44:02.747 [main] WARN  c.m.e.resultset.ResultSetHandler - 不支持的类型转换: class java.time.LocalDateTime → class java.util.Date
+2026-01-10 22:44:02.747 [main] DEBUG c.mybatis.session.DefaultSqlSession - 关闭SqlSession
+2026-01-10 22:44:02.748 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor已关闭
+2026-01-10 22:44:02.748 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接已关闭
+2026-01-10 22:44:02.752 [main] INFO  c.m.builder.xml.XMLConfigBuilder - 开始解析MyBatis配置文件...
+2026-01-10 22:44:02.752 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 默认环境: development
+2026-01-10 22:44:02.752 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库驱动: com.mysql.cj.jdbc.Driver
+2026-01-10 22:44:02.752 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库URL: jdbc:mysql://localhost:3306/mybatis_learn?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+2026-01-10 22:44:02.752 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库用户名: root
+2026-01-10 22:44:02.753 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库密码: ******
+2026-01-10 22:44:02.753 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 解析Mapper文件: mapper/UserMapper.xml
+2026-01-10 22:44:02.755 [main] INFO  c.m.builder.xml.XMLMapperBuilder - 解析Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.755 [main] INFO  com.mybatis.binding.MapperRegistry - 注册Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.755 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectById [SELECT]
+2026-01-10 22:44:02.755 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 22:44:02.756 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectAll [SELECT]
+2026-01-10 22:44:02.756 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user ORDER BY id
+2026-01-10 22:44:02.756 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.insert [INSERT]
+2026-01-10 22:44:02.756 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: INSERT INTO user (username, password, email, create_time) VALUES (#{username}, #{password}, #{email}, #{createTime})
+2026-01-10 22:44:02.756 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.update [UPDATE]
+2026-01-10 22:44:02.756 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: UPDATE user SET username = #{username}, password = #{password}, email = #{email} WHERE id = #{id}
+2026-01-10 22:44:02.756 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.deleteById [DELETE]
+2026-01-10 22:44:02.757 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: DELETE FROM user WHERE id = #{id}
+2026-01-10 22:44:02.757 [main] INFO  c.m.builder.xml.XMLMapperBuilder - Mapper解析完成: com.mybatis.test.mapper.UserMapper (共5条SQL语句)
+2026-01-10 22:44:02.757 [main] INFO  c.m.builder.xml.XMLConfigBuilder - MyBatis配置文件解析完成！
+2026-01-10 22:44:02.757 [main] INFO  c.m.session.DefaultSqlSessionFactory - SqlSessionFactory创建成功
+2026-01-10 22:44:02.757 [main] DEBUG c.m.session.DefaultSqlSessionFactory - 打开SqlSession [autoCommit=false]
+2026-01-10 22:44:02.761 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接建立成功
+2026-01-10 22:44:02.761 [main] DEBUG c.mybatis.session.DefaultSqlSession - SqlSession创建成功 [autoCommit=false]
+2026-01-10 22:44:02.761 [main] DEBUG c.mybatis.binding.MapperProxyFactory - 创建Mapper代理对象: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.761 [main] DEBUG com.mybatis.binding.MapperProxy - Mapper方法调用: com.mybatis.test.mapper.UserMapper.deleteById
+2026-01-10 22:44:02.762 [main] DEBUG com.mybatis.binding.MapperProxy - 执行update
+2026-01-10 22:44:02.762 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行update: com.mybatis.test.mapper.UserMapper.deleteById
+2026-01-10 22:44:02.762 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor执行更新: com.mybatis.test.mapper.UserMapper.deleteById
+2026-01-10 22:44:02.762 [main] DEBUG c.m.e.statement.StatementHandler - 原始SQL: DELETE FROM user WHERE id = #{id}
+2026-01-10 22:44:02.762 [main] DEBUG c.m.e.statement.StatementHandler - 预编译SQL: DELETE FROM user WHERE id = ?
+2026-01-10 22:44:02.762 [main] DEBUG c.m.e.statement.StatementHandler - 设置参数: [1] = 999
+2026-01-10 22:44:02.765 [main] DEBUG c.m.e.statement.StatementHandler - SQL执行成功，影响0行
+2026-01-10 22:44:02.765 [main] DEBUG com.mybatis.executor.SimpleExecutor - 更新完成，影响0行
+2026-01-10 22:44:02.765 [main] DEBUG c.mybatis.session.DefaultSqlSession - 提交事务
+2026-01-10 22:44:02.766 [main] DEBUG c.mybatis.session.DefaultSqlSession - 关闭SqlSession
+2026-01-10 22:44:02.766 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor已关闭
+2026-01-10 22:44:02.766 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接已关闭
+2026-01-10 22:44:02.770 [main] INFO  c.m.builder.xml.XMLConfigBuilder - 开始解析MyBatis配置文件...
+2026-01-10 22:44:02.771 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 默认环境: development
+2026-01-10 22:44:02.771 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库驱动: com.mysql.cj.jdbc.Driver
+2026-01-10 22:44:02.771 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库URL: jdbc:mysql://localhost:3306/mybatis_learn?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+2026-01-10 22:44:02.771 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库用户名: root
+2026-01-10 22:44:02.771 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库密码: ******
+2026-01-10 22:44:02.771 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 解析Mapper文件: mapper/UserMapper.xml
+2026-01-10 22:44:02.774 [main] INFO  c.m.builder.xml.XMLMapperBuilder - 解析Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.775 [main] INFO  com.mybatis.binding.MapperRegistry - 注册Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.775 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectById [SELECT]
+2026-01-10 22:44:02.775 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 22:44:02.775 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectAll [SELECT]
+2026-01-10 22:44:02.776 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user ORDER BY id
+2026-01-10 22:44:02.776 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.insert [INSERT]
+2026-01-10 22:44:02.776 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: INSERT INTO user (username, password, email, create_time) VALUES (#{username}, #{password}, #{email}, #{createTime})
+2026-01-10 22:44:02.776 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.update [UPDATE]
+2026-01-10 22:44:02.776 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: UPDATE user SET username = #{username}, password = #{password}, email = #{email} WHERE id = #{id}
+2026-01-10 22:44:02.777 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.deleteById [DELETE]
+2026-01-10 22:44:02.777 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: DELETE FROM user WHERE id = #{id}
+2026-01-10 22:44:02.777 [main] INFO  c.m.builder.xml.XMLMapperBuilder - Mapper解析完成: com.mybatis.test.mapper.UserMapper (共5条SQL语句)
+2026-01-10 22:44:02.777 [main] INFO  c.m.builder.xml.XMLConfigBuilder - MyBatis配置文件解析完成！
+2026-01-10 22:44:02.777 [main] INFO  c.m.session.DefaultSqlSessionFactory - SqlSessionFactory创建成功
+2026-01-10 22:44:02.777 [main] DEBUG c.m.session.DefaultSqlSessionFactory - 打开SqlSession [autoCommit=false]
+2026-01-10 22:44:02.781 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接建立成功
+2026-01-10 22:44:02.782 [main] DEBUG c.mybatis.session.DefaultSqlSession - SqlSession创建成功 [autoCommit=false]
+2026-01-10 22:44:02.782 [main] DEBUG c.mybatis.binding.MapperProxyFactory - 创建Mapper代理对象: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.782 [main] DEBUG com.mybatis.binding.MapperProxy - Mapper方法调用: com.mybatis.test.mapper.UserMapper.insert
+2026-01-10 22:44:02.782 [main] DEBUG com.mybatis.binding.MapperProxy - 执行update
+2026-01-10 22:44:02.782 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行update: com.mybatis.test.mapper.UserMapper.insert
+2026-01-10 22:44:02.782 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor执行更新: com.mybatis.test.mapper.UserMapper.insert
+2026-01-10 22:44:02.782 [main] DEBUG c.m.e.statement.StatementHandler - 原始SQL: INSERT INTO user (username, password, email, create_time) VALUES (#{username}, #{password}, #{email}, #{createTime})
+2026-01-10 22:44:02.782 [main] DEBUG c.m.e.statement.StatementHandler - 预编译SQL: INSERT INTO user (username, password, email, create_time) VALUES (?, ?, ?, ?)
+2026-01-10 22:44:02.783 [main] WARN  c.m.e.statement.StatementHandler - 暂不支持复杂类型参数: class com.mybatis.test.entity.User
+2026-01-10 22:44:02.788 [main] DEBUG c.mybatis.session.DefaultSqlSession - 关闭SqlSession
+2026-01-10 22:44:02.788 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor已关闭
+2026-01-10 22:44:02.789 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接已关闭
+2026-01-10 22:44:02.792 [main] INFO  c.m.builder.xml.XMLConfigBuilder - 开始解析MyBatis配置文件...
+2026-01-10 22:44:02.792 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 默认环境: development
+2026-01-10 22:44:02.792 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库驱动: com.mysql.cj.jdbc.Driver
+2026-01-10 22:44:02.792 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库URL: jdbc:mysql://localhost:3306/mybatis_learn?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+2026-01-10 22:44:02.793 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库用户名: root
+2026-01-10 22:44:02.793 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库密码: ******
+2026-01-10 22:44:02.793 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 解析Mapper文件: mapper/UserMapper.xml
+2026-01-10 22:44:02.795 [main] INFO  c.m.builder.xml.XMLMapperBuilder - 解析Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.795 [main] INFO  com.mybatis.binding.MapperRegistry - 注册Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.795 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectById [SELECT]
+2026-01-10 22:44:02.796 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 22:44:02.796 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectAll [SELECT]
+2026-01-10 22:44:02.796 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user ORDER BY id
+2026-01-10 22:44:02.796 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.insert [INSERT]
+2026-01-10 22:44:02.796 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: INSERT INTO user (username, password, email, create_time) VALUES (#{username}, #{password}, #{email}, #{createTime})
+2026-01-10 22:44:02.796 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.update [UPDATE]
+2026-01-10 22:44:02.796 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: UPDATE user SET username = #{username}, password = #{password}, email = #{email} WHERE id = #{id}
+2026-01-10 22:44:02.797 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.deleteById [DELETE]
+2026-01-10 22:44:02.797 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: DELETE FROM user WHERE id = #{id}
+2026-01-10 22:44:02.797 [main] INFO  c.m.builder.xml.XMLMapperBuilder - Mapper解析完成: com.mybatis.test.mapper.UserMapper (共5条SQL语句)
+2026-01-10 22:44:02.797 [main] INFO  c.m.builder.xml.XMLConfigBuilder - MyBatis配置文件解析完成！
+2026-01-10 22:44:02.797 [main] INFO  c.m.session.DefaultSqlSessionFactory - SqlSessionFactory创建成功
+2026-01-10 22:44:02.797 [main] DEBUG c.m.session.DefaultSqlSessionFactory - 打开SqlSession [autoCommit=false]
+2026-01-10 22:44:02.801 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接建立成功
+2026-01-10 22:44:02.801 [main] DEBUG c.mybatis.session.DefaultSqlSession - SqlSession创建成功 [autoCommit=false]
+2026-01-10 22:44:02.802 [main] DEBUG c.mybatis.binding.MapperProxyFactory - 创建Mapper代理对象: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.802 [main] DEBUG com.mybatis.binding.MapperProxy - Mapper方法调用: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.802 [main] DEBUG com.mybatis.binding.MapperProxy - 执行selectOne
+2026-01-10 22:44:02.802 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectOne: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.802 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectList: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.802 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor执行查询: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:44:02.802 [main] DEBUG c.m.e.statement.StatementHandler - 原始SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 22:44:02.802 [main] DEBUG c.m.e.statement.StatementHandler - 预编译SQL: SELECT id, username, password, email, create_time FROM user WHERE id = ?
+2026-01-10 22:44:02.803 [main] DEBUG c.m.e.statement.StatementHandler - 设置参数: [1] = 1
+2026-01-10 22:44:02.803 [main] DEBUG c.m.e.statement.StatementHandler - SQL执行成功，开始处理结果集
+2026-01-10 22:44:02.804 [main] DEBUG c.m.e.resultset.ResultSetHandler - 开始处理结果集，目标类型: com.mybatis.test.entity.User
+2026-01-10 22:44:02.804 [main] DEBUG c.m.e.resultset.ResultSetHandler - 结果集包含5列
+2026-01-10 22:44:02.804 [main] WARN  c.m.e.resultset.ResultSetHandler - 不支持的类型转换: class java.time.LocalDateTime → class java.util.Date
+2026-01-10 22:44:02.804 [main] DEBUG c.mybatis.session.DefaultSqlSession - 关闭SqlSession
+2026-01-10 22:44:02.804 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor已关闭
+2026-01-10 22:44:02.805 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接已关闭
+2026-01-10 22:44:02.808 [main] INFO  c.m.builder.xml.XMLConfigBuilder - 开始解析MyBatis配置文件...
+2026-01-10 22:44:02.808 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 默认环境: development
+2026-01-10 22:44:02.809 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库驱动: com.mysql.cj.jdbc.Driver
+2026-01-10 22:44:02.809 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库URL: jdbc:mysql://localhost:3306/mybatis_learn?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+2026-01-10 22:44:02.809 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库用户名: root
+2026-01-10 22:44:02.809 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库密码: ******
+2026-01-10 22:44:02.809 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 解析Mapper文件: mapper/UserMapper.xml
+2026-01-10 22:44:02.812 [main] INFO  c.m.builder.xml.XMLMapperBuilder - 解析Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.812 [main] INFO  com.mybatis.binding.MapperRegistry - 注册Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.812 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectById [SELECT]
+2026-01-10 22:44:02.812 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 22:44:02.812 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectAll [SELECT]
+2026-01-10 22:44:02.812 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user ORDER BY id
+2026-01-10 22:44:02.812 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.insert [INSERT]
+2026-01-10 22:44:02.812 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: INSERT INTO user (username, password, email, create_time) VALUES (#{username}, #{password}, #{email}, #{createTime})
+2026-01-10 22:44:02.813 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.update [UPDATE]
+2026-01-10 22:44:02.813 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: UPDATE user SET username = #{username}, password = #{password}, email = #{email} WHERE id = #{id}
+2026-01-10 22:44:02.813 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.deleteById [DELETE]
+2026-01-10 22:44:02.813 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: DELETE FROM user WHERE id = #{id}
+2026-01-10 22:44:02.813 [main] INFO  c.m.builder.xml.XMLMapperBuilder - Mapper解析完成: com.mybatis.test.mapper.UserMapper (共5条SQL语句)
+2026-01-10 22:44:02.813 [main] INFO  c.m.builder.xml.XMLConfigBuilder - MyBatis配置文件解析完成！
+2026-01-10 22:44:02.813 [main] INFO  c.m.session.DefaultSqlSessionFactory - SqlSessionFactory创建成功
+2026-01-10 22:44:02.813 [main] DEBUG c.m.session.DefaultSqlSessionFactory - 打开SqlSession [autoCommit=false]
+2026-01-10 22:44:02.818 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接建立成功
+2026-01-10 22:44:02.818 [main] DEBUG c.mybatis.session.DefaultSqlSession - SqlSession创建成功 [autoCommit=false]
+2026-01-10 22:44:02.819 [main] DEBUG c.mybatis.binding.MapperProxyFactory - 创建Mapper代理对象: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:44:02.819 [main] DEBUG com.mybatis.binding.MapperProxy - Mapper方法调用: com.mybatis.test.mapper.UserMapper.selectAll
+2026-01-10 22:44:02.819 [main] DEBUG com.mybatis.binding.MapperProxy - 执行selectList
+2026-01-10 22:44:02.819 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectList: com.mybatis.test.mapper.UserMapper.selectAll
+2026-01-10 22:44:02.819 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor执行查询: com.mybatis.test.mapper.UserMapper.selectAll
+2026-01-10 22:44:02.819 [main] DEBUG c.m.e.statement.StatementHandler - 原始SQL: SELECT id, username, password, email, create_time FROM user ORDER BY id
+2026-01-10 22:44:02.820 [main] DEBUG c.m.e.statement.StatementHandler - 预编译SQL: SELECT id, username, password, email, create_time FROM user ORDER BY id
+2026-01-10 22:44:02.822 [main] DEBUG c.m.e.statement.StatementHandler - SQL执行成功，开始处理结果集
+2026-01-10 22:44:02.822 [main] DEBUG c.m.e.resultset.ResultSetHandler - 开始处理结果集，目标类型: com.mybatis.test.entity.User
+2026-01-10 22:44:02.822 [main] DEBUG c.m.e.resultset.ResultSetHandler - 结果集包含5列
+2026-01-10 22:44:02.823 [main] WARN  c.m.e.resultset.ResultSetHandler - 不支持的类型转换: class java.time.LocalDateTime → class java.util.Date
+2026-01-10 22:44:02.823 [main] DEBUG c.mybatis.session.DefaultSqlSession - 关闭SqlSession
+2026-01-10 22:44:02.823 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor已关闭
+2026-01-10 22:44:02.824 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接已关闭
+2026-01-10 22:56:08.884 [main] INFO  c.m.builder.xml.XMLConfigBuilder - 开始解析MyBatis配置文件...
+2026-01-10 22:56:08.887 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 默认环境: development
+2026-01-10 22:56:08.890 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库驱动: com.mysql.cj.jdbc.Driver
+2026-01-10 22:56:08.890 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库URL: jdbc:mysql://localhost:3306/mybatis_learn?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+2026-01-10 22:56:08.890 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库用户名: root
+2026-01-10 22:56:08.891 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库密码: ******
+2026-01-10 22:56:08.891 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 解析Mapper文件: mapper/UserMapper.xml
+2026-01-10 22:56:08.894 [main] INFO  c.m.builder.xml.XMLMapperBuilder - 解析Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:56:08.895 [main] INFO  com.mybatis.binding.MapperRegistry - 注册Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:56:08.896 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectById [SELECT]
+2026-01-10 22:56:08.896 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 22:56:08.897 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectAll [SELECT]
+2026-01-10 22:56:08.898 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user ORDER BY id
+2026-01-10 22:56:08.898 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.insert [INSERT]
+2026-01-10 22:56:08.898 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: INSERT INTO user (username, password, email, create_time) VALUES (#{username}, #{password}, #{email}, #{createTime})
+2026-01-10 22:56:08.898 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.update [UPDATE]
+2026-01-10 22:56:08.898 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: UPDATE user SET username = #{username}, password = #{password}, email = #{email} WHERE id = #{id}
+2026-01-10 22:56:08.899 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.deleteById [DELETE]
+2026-01-10 22:56:08.899 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: DELETE FROM user WHERE id = #{id}
+2026-01-10 22:56:08.899 [main] INFO  c.m.builder.xml.XMLMapperBuilder - Mapper解析完成: com.mybatis.test.mapper.UserMapper (共5条SQL语句)
+2026-01-10 22:56:08.899 [main] INFO  c.m.builder.xml.XMLConfigBuilder - MyBatis配置文件解析完成！
+2026-01-10 22:56:08.900 [main] INFO  c.m.session.DefaultSqlSessionFactory - SqlSessionFactory创建成功
+2026-01-10 22:56:08.900 [main] DEBUG c.m.session.DefaultSqlSessionFactory - 打开SqlSession [autoCommit=false]
+2026-01-10 22:56:09.159 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接建立成功
+2026-01-10 22:56:09.160 [main] DEBUG c.mybatis.session.DefaultSqlSession - SqlSession创建成功 [autoCommit=false]
+2026-01-10 22:56:09.161 [main] DEBUG c.mybatis.binding.MapperProxyFactory - 创建Mapper代理对象: com.mybatis.test.mapper.UserMapper
+2026-01-10 22:56:09.163 [main] DEBUG com.mybatis.binding.MapperProxy - Mapper方法调用: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:56:09.163 [main] DEBUG com.mybatis.binding.MapperProxy - 执行selectOne
+2026-01-10 22:56:09.164 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectOne: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:56:09.164 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectList: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:56:09.164 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor执行查询: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 22:56:09.166 [main] DEBUG c.m.e.statement.StatementHandler - 原始SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 22:56:09.166 [main] DEBUG c.m.e.statement.StatementHandler - 预编译SQL: SELECT id, username, password, email, create_time FROM user WHERE id = ?
+2026-01-10 22:56:09.185 [main] DEBUG c.m.e.statement.StatementHandler - 设置参数: [1] = 1
+2026-01-10 22:56:09.200 [main] DEBUG c.m.e.statement.StatementHandler - SQL执行成功，开始处理结果集
+2026-01-10 22:56:09.200 [main] DEBUG c.m.e.resultset.ResultSetHandler - 开始处理结果集，目标类型: com.mybatis.test.entity.User
+2026-01-10 22:56:09.201 [main] DEBUG c.m.e.resultset.ResultSetHandler - 结果集包含5列
+2026-01-10 22:56:09.203 [main] WARN  c.m.e.resultset.ResultSetHandler - 不支持的类型转换: class java.time.LocalDateTime → class java.util.Date
+2026-01-10 22:56:09.204 [main] DEBUG c.mybatis.session.DefaultSqlSession - 关闭SqlSession
+2026-01-10 22:56:09.204 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor已关闭
+2026-01-10 22:56:09.218 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接已关闭
+2026-01-10 23:02:27.746 [main] INFO  c.m.builder.xml.XMLConfigBuilder - 开始解析MyBatis配置文件...
+2026-01-10 23:02:27.748 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 默认环境: development
+2026-01-10 23:02:27.752 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库驱动: com.mysql.cj.jdbc.Driver
+2026-01-10 23:02:27.753 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库URL: jdbc:mysql://localhost:3306/mybatis_learn?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+2026-01-10 23:02:27.754 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库用户名: root
+2026-01-10 23:02:27.754 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库密码: ******
+2026-01-10 23:02:27.754 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 解析Mapper文件: mapper/UserMapper.xml
+2026-01-10 23:02:27.762 [main] INFO  c.m.builder.xml.XMLMapperBuilder - 解析Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 23:02:27.763 [main] INFO  com.mybatis.binding.MapperRegistry - 注册Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 23:02:27.764 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectById [SELECT]
+2026-01-10 23:02:27.765 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 23:02:27.767 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectAll [SELECT]
+2026-01-10 23:02:27.768 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user ORDER BY id
+2026-01-10 23:02:27.769 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.insert [INSERT]
+2026-01-10 23:02:27.769 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: INSERT INTO user (username, password, email, create_time) VALUES (#{username}, #{password}, #{email}, #{createTime})
+2026-01-10 23:02:27.769 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.update [UPDATE]
+2026-01-10 23:02:27.769 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: UPDATE user SET username = #{username}, password = #{password}, email = #{email} WHERE id = #{id}
+2026-01-10 23:02:27.770 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.deleteById [DELETE]
+2026-01-10 23:02:27.770 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: DELETE FROM user WHERE id = #{id}
+2026-01-10 23:02:27.770 [main] INFO  c.m.builder.xml.XMLMapperBuilder - Mapper解析完成: com.mybatis.test.mapper.UserMapper (共5条SQL语句)
+2026-01-10 23:02:27.770 [main] INFO  c.m.builder.xml.XMLConfigBuilder - MyBatis配置文件解析完成！
+2026-01-10 23:02:27.771 [main] INFO  c.m.session.DefaultSqlSessionFactory - SqlSessionFactory创建成功
+2026-01-10 23:02:27.772 [main] DEBUG c.m.session.DefaultSqlSessionFactory - 打开SqlSession [autoCommit=false]
+2026-01-10 23:02:28.259 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接建立成功
+2026-01-10 23:02:28.260 [main] DEBUG c.mybatis.session.DefaultSqlSession - SqlSession创建成功 [autoCommit=false]
+2026-01-10 23:02:28.261 [main] DEBUG c.mybatis.binding.MapperProxyFactory - 创建Mapper代理对象: com.mybatis.test.mapper.UserMapper
+2026-01-10 23:02:28.265 [main] DEBUG com.mybatis.binding.MapperProxy - Mapper方法调用: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 23:02:28.265 [main] DEBUG com.mybatis.binding.MapperProxy - 执行selectOne
+2026-01-10 23:02:28.266 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectOne: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 23:02:28.266 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectList: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 23:02:28.266 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor执行查询: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 23:02:28.268 [main] DEBUG c.m.e.statement.StatementHandler - 原始SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 23:02:28.268 [main] DEBUG c.m.e.statement.StatementHandler - 预编译SQL: SELECT id, username, password, email, create_time FROM user WHERE id = ?
+2026-01-10 23:02:28.285 [main] DEBUG c.m.e.statement.StatementHandler - 设置参数: [1] = 1
+2026-01-10 23:02:28.303 [main] DEBUG c.m.e.statement.StatementHandler - SQL执行成功，开始处理结果集
+2026-01-10 23:02:28.304 [main] DEBUG c.m.e.resultset.ResultSetHandler - 开始处理结果集，目标类型: com.mybatis.test.entity.User
+2026-01-10 23:02:28.305 [main] DEBUG c.m.e.resultset.ResultSetHandler - 结果集包含5列
+2026-01-10 23:02:28.309 [main] DEBUG c.m.e.resultset.ResultSetHandler - 结果集处理完成，共1行
+2026-01-10 23:02:28.309 [main] DEBUG com.mybatis.executor.SimpleExecutor - 查询完成，返回1条记录
+2026-01-10 23:02:28.310 [main] DEBUG c.mybatis.session.DefaultSqlSession - 关闭SqlSession
+2026-01-10 23:02:28.310 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor已关闭
+2026-01-10 23:02:28.327 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接已关闭
+2026-01-10 23:08:01.728 [main] INFO  c.m.builder.xml.XMLConfigBuilder - 开始解析MyBatis配置文件...
+2026-01-10 23:08:01.730 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 默认环境: development
+2026-01-10 23:08:01.733 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库驱动: com.mysql.cj.jdbc.Driver
+2026-01-10 23:08:01.733 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库URL: jdbc:mysql://localhost:3306/mybatis_learn?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+2026-01-10 23:08:01.733 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库用户名: root
+2026-01-10 23:08:01.734 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 数据库密码: ******
+2026-01-10 23:08:01.734 [main] DEBUG c.m.builder.xml.XMLConfigBuilder - 解析Mapper文件: mapper/UserMapper.xml
+2026-01-10 23:08:01.737 [main] INFO  c.m.builder.xml.XMLMapperBuilder - 解析Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 23:08:01.738 [main] INFO  com.mybatis.binding.MapperRegistry - 注册Mapper: com.mybatis.test.mapper.UserMapper
+2026-01-10 23:08:01.739 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectById [SELECT]
+2026-01-10 23:08:01.740 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 23:08:01.741 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.selectAll [SELECT]
+2026-01-10 23:08:01.742 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: SELECT id, username, password, email, create_time FROM user ORDER BY id
+2026-01-10 23:08:01.742 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.insert [INSERT]
+2026-01-10 23:08:01.742 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: INSERT INTO user (username, password, email, create_time) VALUES (#{username}, #{password}, #{email}, #{createTime})
+2026-01-10 23:08:01.742 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.update [UPDATE]
+2026-01-10 23:08:01.742 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: UPDATE user SET username = #{username}, password = #{password}, email = #{email} WHERE id = #{id}
+2026-01-10 23:08:01.742 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - 解析SQL语句: com.mybatis.test.mapper.UserMapper.deleteById [DELETE]
+2026-01-10 23:08:01.743 [main] DEBUG c.m.builder.xml.XMLMapperBuilder - SQL: DELETE FROM user WHERE id = #{id}
+2026-01-10 23:08:01.743 [main] INFO  c.m.builder.xml.XMLMapperBuilder - Mapper解析完成: com.mybatis.test.mapper.UserMapper (共5条SQL语句)
+2026-01-10 23:08:01.743 [main] INFO  c.m.builder.xml.XMLConfigBuilder - MyBatis配置文件解析完成！
+2026-01-10 23:08:01.744 [main] INFO  c.m.session.DefaultSqlSessionFactory - SqlSessionFactory创建成功
+2026-01-10 23:08:07.537 [main] DEBUG c.m.session.DefaultSqlSessionFactory - 打开SqlSession [autoCommit=false]
+2026-01-10 23:08:09.854 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接建立成功
+2026-01-10 23:08:09.857 [main] DEBUG c.mybatis.session.DefaultSqlSession - SqlSession创建成功 [autoCommit=false]
+2026-01-10 23:08:24.530 [main] DEBUG c.mybatis.binding.MapperProxyFactory - 创建Mapper代理对象: com.mybatis.test.mapper.UserMapper
+2026-01-10 23:08:55.304 [main] DEBUG com.mybatis.binding.MapperProxy - Mapper方法调用: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 23:08:55.306 [main] DEBUG com.mybatis.binding.MapperProxy - 执行selectOne
+2026-01-10 23:08:55.307 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectOne: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 23:08:55.308 [main] DEBUG c.mybatis.session.DefaultSqlSession - 执行selectList: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 23:08:55.310 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor执行查询: com.mybatis.test.mapper.UserMapper.selectById
+2026-01-10 23:08:55.318 [main] DEBUG c.m.e.statement.StatementHandler - 原始SQL: SELECT id, username, password, email, create_time FROM user WHERE id = #{id}
+2026-01-10 23:08:55.319 [main] DEBUG c.m.e.statement.StatementHandler - 预编译SQL: SELECT id, username, password, email, create_time FROM user WHERE id = ?
+2026-01-10 23:08:55.377 [main] DEBUG c.m.e.statement.StatementHandler - 设置参数: [1] = 1
+2026-01-10 23:08:55.593 [main] DEBUG c.m.e.statement.StatementHandler - SQL执行成功，开始处理结果集
+2026-01-10 23:08:55.595 [main] DEBUG c.m.e.resultset.ResultSetHandler - 开始处理结果集，目标类型: com.mybatis.test.entity.User
+2026-01-10 23:08:55.599 [main] DEBUG c.m.e.resultset.ResultSetHandler - 结果集包含5列
+2026-01-10 23:08:55.611 [main] DEBUG c.m.e.resultset.ResultSetHandler - 结果集处理完成，共1行
+2026-01-10 23:08:55.613 [main] DEBUG com.mybatis.executor.SimpleExecutor - 查询完成，返回1条记录
+2026-01-10 23:08:55.615 [main] DEBUG c.mybatis.session.DefaultSqlSession - 关闭SqlSession
+2026-01-10 23:08:55.616 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor已关闭
+2026-01-10 23:08:55.674 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接已关闭

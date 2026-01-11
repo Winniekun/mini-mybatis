@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration>
+<!-- 
+    MyBatis主配置文件示例
+    
+    这个文件定义了MyBatis的全局配置，包括：
+    1. 数据源配置
+    2. Mapper映射文件位置
+    3. 插件配置
+    4. 其他全局设置
+-->
+<configuration>
+    
+    <!-- 环境配置：可以配置多个环境（开发、测试、生产） -->
+    <environments default="development">
+        
+        <!-- 开发环境 -->
+        <environment id="development">
+            
+            <!-- 事务管理器类型：JDBC -->
+            <transactionManager type="JDBC"/>
+            
+            <!-- 数据源配置 -->
+            <dataSource type="POOLED">
+                <!-- MySQL 8.x 驱动 -->
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                
+                <!-- 数据库连接URL -->
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis_learn?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=Asia/Shanghai"/>
+                
+                <!-- 数据库用户名 -->
+                <property name="username" value="root"/>
+                
+                <!-- 数据库密码 -->
+                <property name="password" value="kwk961202"/>
+            </dataSource>
+        </environment>
+        
+    </environments>
+    
+    <!-- Mapper映射文件配置 -->
+    <mappers>
+        <!-- 通过resource加载Mapper文件 -->
+        <mapper resource="mapper/UserMapper.xml"/>
+        <mapper resource="mapper/ProductMapper.xml"/>
+    </mappers>
+    
+</configuration>
+

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper>
+<!--
+    ProductMapper映射文件
+    
+    重要规则：
+    1. namespace必须是接口的完整类名
+    2. id必须和接口方法名一致
+    3. parameterType是参数类型（可选，能自动推断）
+    4. resultType是返回类型（必须）
+    5. #{参数名}是参数占位符，会被替换为?
+-->
+<mapper namespace="com.mybatis.test.mapper.ProductMapper">
+    
+    <!-- 
+        1. 根据ID查询商品
+        
+        SQL说明：
+        - #{id} 会被替换为 ?
+        - 执行时：SELECT * FROM product WHERE id = ?
+        - 参数1L会绑定到?的位置
+    -->
+    <select id="selectById" 
+            parameterType="java.lang.Long" 
+            resultType="com.mybatis.test.entity.Product">
+        SELECT 
+            id,
+            product_name,
+            category,
+            price,
+            stock,
+            description,
+            create_time
+        FROM product
+        WHERE id = #{id}
+    </select>
+    
+    <!-- 
+        2. 查询所有商品
+        
+        注意：
+        - 没有参数，所以不需要parameterType
+        - 返回List<Product>，但resultType只写Product
+    -->
+    <select id="selectAll" 
+            resultType="com.mybatis.test.entity.Product">
+        SELECT 
+            id,
+            product_name,
+            category,
+            price,
+            stock,
+            description,
+            create_time
+        FROM product
+        ORDER BY id DESC
+    </select>
+    
+    <!-- 
+        3. 根据分类查询
+        
+        参数说明：
+        - category是String类型
+        - #{category}会被替换为?
+        - 执行时会调用ps.setString(1, "手机")
+    -->
+    <select id="selectByCategory" 
+            parameterType="java.lang.String" 
+            resultType="com.mybatis.test.entity.Product">
+        SELECT 
+            id,
+            product_name,
+            category,
+            price,
+            stock,
+            description,
+            create_time
+        FROM product
+        WHERE category = #{category}
+    </select>
+    
+    <!-- 
+        4. 插入商品
+        
+        参数说明：
+        - 参数是Product对象
+        - #{productName}会调用product.getProductName()
+        - #{price}会调用product.getPrice()
+        - 以此类推...
+    -->
+    <insert id="insert" 
+            parameterType="com.mybatis.test.entity.Product">
+        INSERT INTO product (
+            product_name,
+            category,
+            price,
+            stock,
+            description,
+            create_time
+        ) VALUES (
+            #{productName},
+            #{category},
+            #{price},
+            #{stock},
+            #{description},
+            #{createTime}
+        )
+    </insert>
+    
+    <!-- 
+        5. 更新商品
+        
+        注意：
+        - WHERE条件也用#{id}
+        - 所有要更新的字段都要写
+    -->
+    <update id="update" 
+            parameterType="com.mybatis.test.entity.Product">
+        UPDATE product SET
+            product_name = #{productName},
+            category = #{category},
+            price = #{price},
+            stock = #{stock},
+            description = #{description}
+        WHERE id = #{id}
+    </update>
+    
+    <!-- 
+        6. 删除商品
+        
+        简单的删除操作
+    -->
+    <delete id="deleteById" 
+            parameterType="java.lang.Long">
+        DELETE FROM product 
+        WHERE id = #{id}
+    </delete>
+    
+</mapper>
+

@@ -1,0 +1,3 @@
+com/mybatis/test/MybatisTest.class
+com/mybatis/test/entity/User.class
+com/mybatis/test/mapper/UserMapper.class
