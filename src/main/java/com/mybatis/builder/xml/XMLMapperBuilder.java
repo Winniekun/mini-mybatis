@@ -85,7 +85,7 @@ public class XMLMapperBuilder {
         try {
             Class<?> mapperClass = Class.forName(namespace);
             if (!configuration.hasMapper(mapperClass)) {
-                configuration.addMapper(mapperClass);
+                 configuration.addMapper(mapperClass);
             }
         } catch (ClassNotFoundException e) {
             logger.warn("未找到Mapper接口: {}", namespace);

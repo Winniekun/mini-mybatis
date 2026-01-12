@@ -47,9 +47,9 @@ MyBatis核心架构
 - [x] 基础配置类
 
 ### 第二阶段：配置解析
-- [ ] XML配置文件解析
-- [ ] Configuration配置类
-- [ ] SqlSessionFactory构建
+- [x] XML配置文件解析
+- [x] Configuration配置类
+- [x] SqlSessionFactory构建
 
 ### 第三阶段：SQL执行器
 - [ ] Executor接口设计
