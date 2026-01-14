@@ -52,14 +52,14 @@ MyBatis核心架构
 - [x] SqlSessionFactory构建
 
 ### 第三阶段：SQL执行器
-- [ ] Executor接口设计
-- [ ] SimpleExecutor实现
-- [ ] StatementHandler实现
+- [x] Executor接口设计
+- [x] SimpleExecutor实现
+- [x] StatementHandler实现
 
 ### 第四阶段：结果映射
-- [ ] ResultSetHandler实现
+- [x] ResultSetHandler实现
 - [ ] 类型转换器TypeHandler
-- [ ] 结果集映射逻辑
+- [x] 结果集映射逻辑
 
 ### 第五阶段：Mapper代理
 - [ ] MapperProxy动态代理
