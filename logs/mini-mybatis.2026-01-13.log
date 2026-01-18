@@ -1,0 +1,9 @@
+2026-01-13 00:02:57.370 [main] DEBUG c.m.e.statement.StatementHandler - 设置参数: [1] = 1
+2026-01-13 00:02:57.443 [main] DEBUG c.m.e.statement.StatementHandler - SQL执行成功，开始处理结果集
+2026-01-13 00:02:57.443 [main] DEBUG c.m.e.resultset.ResultSetHandler - 开始处理结果集，目标类型: com.mybatis.test.entity.User
+2026-01-13 00:02:57.444 [main] DEBUG c.m.e.resultset.ResultSetHandler - 结果集包含5列
+2026-01-13 00:02:57.454 [main] DEBUG c.m.e.resultset.ResultSetHandler - 结果集处理完成，共1行
+2026-01-13 00:02:57.455 [main] DEBUG com.mybatis.executor.SimpleExecutor - 查询完成，返回1条记录
+2026-01-13 00:02:57.456 [main] DEBUG c.mybatis.session.DefaultSqlSession - 关闭SqlSession
+2026-01-13 00:02:57.457 [main] DEBUG com.mybatis.executor.SimpleExecutor - SimpleExecutor已关闭
+2026-01-13 00:02:57.475 [main] DEBUG c.mybatis.session.DefaultSqlSession - 数据库连接已关闭
